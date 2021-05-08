@@ -1,0 +1,6 @@
+.idea
+backend/.idea
+venv
+backend/__pycache__
+backend/Pipfile.lock
+
