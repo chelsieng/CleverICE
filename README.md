@@ -1,4 +1,4 @@
-# TOHacks21
+# TOHacks2021
 # Backend
 ```
    	$ cd backend/
@@ -17,5 +17,4 @@
 
 #### Angular app will be listening on http://localhost:4200/ 
 #### Backend endpoint will be listening on http://localhost:4200/flask
-# TOHacks2021
-# TOHacks2021
+
