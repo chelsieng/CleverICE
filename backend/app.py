@@ -1,5 +1,5 @@
 from flask import Flask
-from .googlecloud import *
+from services.googlecloud import *
 
 app = Flask(__name__)
 
