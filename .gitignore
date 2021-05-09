@@ -3,4 +3,5 @@ backend/.idea
 venv
 backend/__pycache__
 backend/Pipfile.lock
-
+frontend/package-lock.json
+/node_modules
