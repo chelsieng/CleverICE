@@ -1,4 +1,10 @@
-# :ice_cube: CleverICE	
+<p align="center">
+	<img src = 'assets/logo.png'>
+</p>
+
+[A submission to ToHacks 2021](https://devpost.com/software/intact-insurance-challenge)
+
+
 A tool that helps automate the insurance claim process
 
 ## :bulb: Inspiration
@@ -15,6 +21,7 @@ CleverICE (or Clever Insurance Claim Extract) allows insurance companies to uplo
 * Then we extract information and answer related questions using GPT-3 OpenAI.
 
 #### Frontend: Angular
+
 #### Backend: Python with Flask. CockroachDB using SqlAchemy as Database.
 
 ## :muscle: Challenges we ran into
