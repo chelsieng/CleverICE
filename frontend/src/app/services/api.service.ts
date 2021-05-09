@@ -12,14 +12,14 @@ export class ApiService {
     this.http = http;
   }
 
-  getRequestName(argumentName?: typedef): Observable<returnTypeDef> {
-    let url = '/xxxxx/';
-    // some operations here
-    return this.http.get<returnTypeDef>(url);
-  }
+  // getRequestName(argumentName?: typedef): Observable<returnTypeDef> {
+  //   let url = '/xxxxx/';
+  //   // some operations here
+  //   return this.http.get<returnTypeDef>(url);
+  // }
 
-  uploadImage(filename: any): Observable<returnTypeDef> {
+  uploadImage(filename: any): Observable<any> {
     const url = '/uploadImage';
-    return this.http.post<returnTypeDef>(url, filename);
+    return this.http.post<any>(url, filename);
   }
 }
