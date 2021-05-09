@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_restx import Resource
 from PIL import Image
-from .services.googlecloud import *
+from services.googlecloud import *
 import database as db
 from openai_request import openAI
 
