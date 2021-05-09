@@ -26,8 +26,9 @@ CleverICE (or Clever Insurance Claim Extract) allows insurance companies to uplo
 We're proud to have been able to create a prototype in 24 hours! The back-end works well and endpoints work correctly as expected.
 
 ## :books: What we learned
-We learn how to connect remotely to the SQL database
-Learn how to leverage NLP with Open AI.
+* We learn how to connect remotely to the CockroachDB SQL database
+* Learn how to leverage NLP with Open AI.
+* OpenAI is awesome!
 
 ## :clapper: Demo
 
@@ -42,14 +43,14 @@ Learn how to leverage NLP with Open AI.
 #### 3. Claim information extracted
 ![info-extracted](https://user-images.githubusercontent.com/60008262/117580282-3dfd7a00-b0c5-11eb-9b7c-34fe843b54fd.png)
 
-## How to run Backend
+## :electric_plug: How to run Backend
 ```
 	$ pipenv shell
 	$ pipenv install
 	$ pip install -r requirements.txt
 	$ python run.py
 ```
-## How to run Frontend
+## 💻 How to run Frontend
 
 ```
 	$ npm install
