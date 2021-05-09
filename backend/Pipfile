@@ -4,8 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+google-api-python-client = "*"
+google-cloud-vision = "*"
+google-cloud-storage = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
