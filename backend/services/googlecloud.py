@@ -95,6 +95,7 @@ def upload_blob(source_file_name, bucket_name="tohacks-buc", destination_blob_na
     bucket = storage_client.bucket(bucket_name)
     blob = bucket.blob(destination_blob_name)
 
+    # blob.upload_from_string(bytedata, content_type='application/pdf')
     blob.upload_from_filename(source_file_name)
 
     print(

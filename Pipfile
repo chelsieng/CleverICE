@@ -9,6 +9,7 @@ google-cloud-vision = "*"
 google-cloud-storage = "*"
 gunicorn = "==19.7.1"
 flask = "*"
+flask-restx = "*"
 
 [dev-packages]
 
