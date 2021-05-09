@@ -1,7 +1,7 @@
 <main class="profile-page">
-  <section class="section-profile-cover section-shaped my-0">
+  <section class="section-profile-cover section-shaped">
     <!-- Circles background -->
-    <div class="shape shape-style-1 shape-primary alpha-4">
+    <div class="shape shape-style-1 shape-default">
       <span></span>
       <span></span>
       <span></span>
@@ -12,7 +12,8 @@
     </div>
     <!-- SVG separator -->
     <div class="separator separator-bottom separator-skew">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+           xmlns="http://www.w3.org/2000/svg">
         <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
       </svg>
     </div>
@@ -25,46 +26,93 @@
             <div class="col-lg-3 order-lg-2">
               <div class="card-profile-image">
                 <a href="javascript:void(0)">
-                  <img src="./assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                  <img src="../../assets/img/theme/check.jpeg" class="rounded-circle">
                 </a>
               </div>
             </div>
             <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-              <div class="card-profile-actions py-4 mt-lg-0">
-                <a href="javascript:void(0)" class="btn btn-sm btn-info mr-4">Connect</a>
-                <a href="javascript:void(0)" class="btn btn-sm btn-default float-right">Message</a>
-              </div>
             </div>
             <div class="col-lg-4 order-lg-1">
               <div class="card-profile-stats d-flex justify-content-center">
-                <div>
-                  <span class="heading">22</span>
-                  <span class="description">Friends</span>
-                </div>
-                <div>
-                  <span class="heading">10</span>
-                  <span class="description">Photos</span>
-                </div>
-                <div>
-                  <span class="heading">89</span>
-                  <span class="description">Comments</span>
-                </div>
               </div>
             </div>
           </div>
           <div class="text-center mt-5">
-            <h3>Jessica Jones
-              <span class="font-weight-light">, 27</span>
-            </h3>
-            <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Bucharest, Romania</div>
-            <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer</div>
-            <div><i class="ni education_hat mr-2"></i>University of Computer Science</div>
+            <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i></div>
+            <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Document successfully uploaded</div>
           </div>
-          <div class="mt-5 py-5 border-top text-center">
+          <div class="mt-5 py-5 border-top">
             <div class="row justify-content-center">
               <div class="col-lg-9">
-                <p>An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</p>
-                <a href="javascript:void(0)">Show more</a>
+                <form role="form">
+                  <div class="row">
+                    <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
+                      <label class="text-muted">Name: </label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="Enter your name" type="text" (focus)="focus=true"
+                               (blur)="focus=false">
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
+                      <label class="text-muted">Phone number: </label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="Enter your phone number" type="number"
+                               (focus)="focus=true" (blur)="focus=false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
+                      <label class="text-muted">Policy Number: </label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="Enter your policy number" type="text"
+                               (focus)="focus=true"
+                               (blur)="focus=false">
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
+                      <label class="text-muted">Email: </label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="Enter your email" type="email"
+                               (focus)="focus=true" (blur)="focus=false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
+                    <label class="text-muted">What happened:</label>
+                    <div class="input-group input-group-alternative">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Tell us more about your situation"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
+                      <label class="text-muted">Where did the incident occur: </label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="Enter location of incident" type="text"
+                               (focus)="focus=true"
+                               (blur)="focus=false">
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
+                      <label class="text-muted">Claim amount: </label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="Enter your claim amount" type="number"
+                               (focus)="focus=true" (blur)="focus=false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
+                    <label class="text-muted">A short summary of your letter</label>
+                    <div class="input-group input-group-alternative">
+                      <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"
+                                placeholder="Give a brief description of your claim letter"></textarea>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary my-4">Confirm</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
