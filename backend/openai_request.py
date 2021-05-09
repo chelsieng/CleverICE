@@ -39,6 +39,7 @@ class openAI:
         prompt = self.prefix + prompt + '\n"""\n' + suffix + self.answer_prefix
         print(prompt)
         response = self.clean(self.make_request(prompt, temperature=0.3, max_tokens=250, frequency_penalty=0.16))
+        print(response)
         return response
 
     def clean(self, response):

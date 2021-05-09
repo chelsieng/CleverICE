@@ -20,16 +20,21 @@ export class ProfileComponent implements OnInit {
   location;
   amount;
   summary;
-  api
+  api;
+  response;
 
   constructor(api: ApiService, shared: SharedService) {
     this.shared = shared
+    this.api = api
   }
 
   ngOnInit() {
-    this.api.getScan(this.shared.getFileData()).subscribe(
-      (data: any) => {console.log(data)}
+    this.api.scanFilename(this.shared.getFileData()).subscribe(
+      (data: string) => {console.log(data)}
     );
+//     ,
+//       (error: HttpErrorResponse) => this.response), // on error
+//     );
   }
 
 }

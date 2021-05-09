@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   api: ApiService;
   shared: SharedService;
 
-  constructor(api: ApiService, private router: Router, private shared: SharedService) {
+  constructor(api: ApiService, private router: Router, shared: SharedService) {
     this.api = api
     this.shared = shared
   }

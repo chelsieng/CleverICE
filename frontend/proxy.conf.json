@@ -12,17 +12,20 @@
   "/getpdftext": {
     "target": "http://127.0.0.1:5000/",
     "secure": false,
-    "changeOrigin": true
+    "changeOrigin": true,
+    "timeout": 360000
   },
   "/uploadblob": {
     "target": "http://127.0.0.1:5000/",
     "secure": false,
-    "changeOrigin": true
+    "changeOrigin": true,
+    "timeout": 360000
   },
   "/uploadImage": {
     "target": "http://127.0.0.1:5000/",
     "secure": true,
-    "changeOrigin": true
+    "changeOrigin": true,
+    "timeout": 360000
   },
   "/createUser": {
     "target": "http://127.0.0.1:5000/",
@@ -72,7 +75,8 @@
   "/scan_filename": {
     "target": "http://127.0.0.1:5000/",
     "secure": true,
-    "changeOrigin": true
+    "changeOrigin": true,
+    "timeout": 360000
   },
   "/ask": {
     "target": "http://127.0.0.1:5000/",
