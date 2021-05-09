@@ -44,6 +44,5 @@ Learn how to leverage NLP with Open AI.
 	$ npm install
 	$ npm run start
 ```
-
-Angular app will be listening on http://localhost:4200/ 
+CleverICE will be listening on http://localhost:4200/ 
 
