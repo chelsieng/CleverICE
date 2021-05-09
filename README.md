@@ -35,7 +35,7 @@ Learn how to leverage NLP with Open AI.
 
 
 #### 2. After Submission
-![uploaded](https://user-images.githubusercontent.com/60008262/117580269-35a53f00-b0c5-11eb-85e4-29edf50e3933.png)!
+![uploaded](https://user-images.githubusercontent.com/60008262/117580269-35a53f00-b0c5-11eb-85e4-29edf50e3933.png)
 
 
 #### 3. Claim information extracted
