@@ -3,4 +3,7 @@ backend/.idea
 venv
 backend/__pycache__
 backend/Pipfile.lock
+*.vscode
+*.DS_Store
+node_modules/
 
