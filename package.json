@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cd frontend && ng serve --proxy-config proxy.conf.json",
-    "build": "cd frontend && ng build --prod",
+    "build": "cd frontend && ng build",
     "test": "cd frontend && ng test",
     "lint": "cd frontend && ng lint",
     "e2e": "cd frontend && ng e2e"
