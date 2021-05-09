@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-login',
@@ -6,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   focus;
   focus1;
-  constructor() { }
+  api;
+
+  constructor(api: ApiService) {
+    this.api = api
+  }
+
+
 
   ngOnInit() {
   }
