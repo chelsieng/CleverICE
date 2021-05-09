@@ -12,15 +12,14 @@ export class ApiService {
     this.http = http;
   }
 
-  // getRequestName(argumentName?: typedef): Observable<returnTypeDef> {
-  //   let url = '/xxxxx/';
-  //   // some operations here
-  //   return this.http.get<returnTypeDef>(url);
-  // }
+  getScan(filename?: string): Observable<string> {
+    let url = '/scan_filename/' + filename;
+    return this.http.get<string>(url);
+  }
 
   uploadImage(filename: any): Observable<any> {
     filename = filename.replace(/.*[\/\\]/, '')
-    const url = '/uploadblob/'+filename;
+    const url = '/uploadblob/' + filename;
     return this.http.get<any>(url);
   }
 

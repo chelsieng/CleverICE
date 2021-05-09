@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SharedService} from '../services/shared.service'
+import {ApiService} from "../services/api.service";
 
 @Component({
   selector: 'app-profile',
@@ -11,13 +12,24 @@ export class ProfileComponent implements OnInit {
   focus;
   focus1;
   shared: SharedService;
+  name;
+  phoneNum;
+  policyNum;
+  email;
+  situation;
+  location;
+  amount;
+  summary;
+  api
 
-  constructor(private shared: SharedService) {
+  constructor(api: ApiService, shared: SharedService) {
     this.shared = shared
   }
 
   ngOnInit() {
-    console.log(this.shared.getFileData())
+    this.api.getScan(this.shared.getFileData()).subscribe(
+      (data: any) => {console.log(data)}
+    );
   }
 
 }
