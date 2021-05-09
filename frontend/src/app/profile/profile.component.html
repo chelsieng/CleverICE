@@ -49,14 +49,16 @@
                     <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
                       <label class="text-muted">Name: </label>
                       <div class="input-group input-group-alternative">
-                        <input #name class="form-control" placeholder="Enter your name" type="text" (focus)="focus=true"
+                        <input [(ngModel)]="claim.name" class="form-control" placeholder="Enter your name"
+                               type="text" (focus)="focus=true"
                                (blur)="focus=false">
                       </div>
                     </div>
                     <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
                       <label class="text-muted">Phone number: </label>
                       <div class="input-group input-group-alternative">
-                        <input #phone class="form-control" placeholder="Enter your phone number" type="number"
+                        <input [(ngModel)]="claim.phoneNum" class="form-control"
+                               placeholder="Enter your phone number" type="text"
                                (focus)="focus=true" (blur)="focus=false">
                       </div>
                     </div>
@@ -65,7 +67,7 @@
                     <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
                       <label class="text-muted">Policy Number: </label>
                       <div class="input-group input-group-alternative">
-                        <input #policy class="form-control" placeholder="Enter your policy number" type="text"
+                        <input [(ngModel)]="claim.policyNum" class="form-control" placeholder="Enter your policy number" type="text"
                                (focus)="focus=true"
                                (blur)="focus=false">
                       </div>
@@ -73,7 +75,7 @@
                     <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
                       <label class="text-muted">Email: </label>
                       <div class="input-group input-group-alternative">
-                        <input #email class="form-control" placeholder="Enter your email" type="email"
+                        <input [(ngModel)]="claim.email" class="form-control" placeholder="Enter your email" type="email"
                                (focus)="focus=true" (blur)="focus=false">
                       </div>
                     </div>
@@ -81,7 +83,7 @@
                   <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
                     <label class="text-muted">What happened:</label>
                     <div class="input-group input-group-alternative">
-                      <textarea #situation class="form-control" id="exampleFormControlTextarea1" rows="3"
+                      <textarea [(ngModel)]="claim.situation" class="form-control" id="exampleFormControlTextarea1" rows="3"
                                 placeholder="Tell us more about your situation"></textarea>
                     </div>
                   </div>
@@ -89,7 +91,7 @@
                     <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
                       <label class="text-muted">Where did the incident occur: </label>
                       <div class="input-group input-group-alternative">
-                        <input #location class="form-control" placeholder="Enter location of incident" type="text"
+                        <input [(ngModel)]="claim.location" class="form-control" placeholder="Enter location of incident" type="text"
                                (focus)="focus=true"
                                (blur)="focus=false">
                       </div>
@@ -97,7 +99,7 @@
                     <div class="form-group col-lg-6 mb-3" [ngClass]="{'focused':focus===true}">
                       <label class="text-muted">Claim amount: </label>
                       <div class="input-group input-group-alternative">
-                        <input #amount class="form-control" placeholder="Enter your claim amount" type="number"
+                        <input [(ngModel)]="claim.amount" class="form-control" placeholder="Enter your claim amount" type="number"
                                (focus)="focus=true" (blur)="focus=false">
                       </div>
                     </div>
@@ -105,7 +107,7 @@
                   <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
                     <label class="text-muted">A short summary of your letter</label>
                     <div class="input-group input-group-alternative">
-                      <textarea #summary class="form-control" id="exampleFormControlTextarea2" rows="3"
+                      <textarea [(ngModel)]="claim.summary" class="form-control" id="exampleFormControlTextarea2" rows="3"
                                 placeholder="Give a brief description of your claim letter"></textarea>
                     </div>
                   </div>
