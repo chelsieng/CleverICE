@@ -18,8 +18,8 @@ export class ApiService {
     return this.http.get<returnTypeDef>(url);
   }
 
-  postRequestName(argumentName: typedef): Observable<returnTypeDef> {
-    const url = '/xxxxx';
-    return this.http.post<returnTypeDef>(url, argumentName);
+  uploadImage(filename: any): Observable<returnTypeDef> {
+    const url = '/uploadImage';
+    return this.http.post<returnTypeDef>(url, filename);
   }
 }
