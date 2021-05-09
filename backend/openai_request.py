@@ -1,6 +1,6 @@
 import os
 import openai
-from config import Config
+from .config import Config
 
 class openAI:
     prefix = 'Here is a claim letter from a customer to an insurance company.\

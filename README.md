@@ -1,16 +1,13 @@
 # TOHacks2021
 # Backend
 ```
-   	$ cd backend/
-	$ pipenv install --dev
 	$ pipenv shell
-	$ pip install -r requirements.txt
-	$ python app.py
+	$ pipenv install
+	$ python run.py
 ```
 # Frontend
 
 ```
-    	$ cd frontend/
 	$ npm install
 	$ npm run start
 ```
