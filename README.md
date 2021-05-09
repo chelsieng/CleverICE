@@ -30,6 +30,16 @@ Learn how to leverage NLP with Open AI.
 
 ## :clapper: Demo
 
+#### 1. Upload Doc
+![upload-form](https://user-images.githubusercontent.com/60008262/117580252-232b0580-b0c5-11eb-9a74-50034803df75.png)
+
+
+#### 2. After Submission
+![uploaded](https://user-images.githubusercontent.com/60008262/117580269-35a53f00-b0c5-11eb-85e4-29edf50e3933.png)!
+
+
+#### 3. Claim information extracted
+![info-extracted](https://user-images.githubusercontent.com/60008262/117580282-3dfd7a00-b0c5-11eb-9b7c-34fe843b54fd.png)
 
 ## How to run Backend
 ```
