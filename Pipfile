@@ -4,12 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+openai = "*"
+python-dotenv = "*"
 google-api-python-client = "*"
 google-cloud-vision = "*"
 google-cloud-storage = "*"
 gunicorn = "==19.7.1"
 flask = "*"
+sqlalchemy-cockroachdb = "*"
+flask-sqlalchemy = "*"
 flask-restx = "*"
+psycopg2-binary = "*"
+pillow = "*"
 
 [dev-packages]
 

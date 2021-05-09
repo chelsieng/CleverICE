@@ -1,7 +1,8 @@
 .idea
-backend/.idea
+*.idea
 venv
-backend/__pycache__
-backend/Pipfile.lock
 frontend/package-lock.json
 /node_modules
+*__pycache__
+*.vscode
+*.DS_Store
