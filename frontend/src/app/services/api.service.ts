@@ -19,7 +19,8 @@ export class ApiService {
   // }
 
   uploadImage(filename: any): Observable<any> {
-    const url = '/uploadImage';
-    return this.http.post<any>(url, filename);
+    filename = filename.replace(/.*[\/\\]/, '')
+    const url = '/uploadblob/'+filename;
+    return this.http.get<any>(url);
   }
 }

@@ -19,9 +19,9 @@
     "secure": false,
     "changeOrigin": true
   },
-  "/uploadimage": {
+  "/uploadImage": {
     "target": "http://127.0.0.1:5000/",
-    "secure": false,
+    "secure": true,
     "changeOrigin": true
   },
   "/createUser": {

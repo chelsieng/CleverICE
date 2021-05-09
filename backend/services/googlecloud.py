@@ -88,6 +88,7 @@ def upload_blob(source_file_name, bucket_name="tohacks-buc", destination_blob_na
     # source_file_name = "local/path/to/file"
     # The ID of your GCS object
     # destination_blob_name = "storage-object-name"
+    source_file_name="backend/docs/"+source_file_name
 
     destination_blob_name = os.path.split(source_file_name)[1]
 
@@ -107,7 +108,7 @@ def upload_blob(source_file_name, bucket_name="tohacks-buc", destination_blob_na
     # create pdf to text already
     async_detect_document(destination_blob_name)
 
-    return "OK"
+    return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
 
 # bucket_name = "tohacks-buc"
 # source_file_name = "/home/niyon/Downloads/claim-letter-05-converted.pdf"

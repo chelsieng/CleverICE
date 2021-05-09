@@ -4,11 +4,14 @@ from PIL import Image
 from .services.googlecloud import *
 from .database import *
 from .openai_request import openAI
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__, static_folder='../frontend/dist', static_url_path='/')
+cors = CORS(app)
 UPLOAD_FOLDER = '/data'
 
 @app.route('/flask')
+@cross_origin()
 def hello_world():
     return 'Hello World from Flask!'
 
@@ -24,6 +27,7 @@ def uploadblob(file):
     return upload_blob(file)
 
 @app.route('/uploadImage')
+@cross_origin()
 def upload_image(Resource):
     def post(self):
         if 'file' not in request.files:

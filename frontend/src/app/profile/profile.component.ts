@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SharedService} from '../services/shared.service'
 
 @Component({
   selector: 'app-profile',
@@ -9,11 +10,14 @@ import {Component, OnInit} from '@angular/core';
 export class ProfileComponent implements OnInit {
   focus;
   focus1;
+  shared: SharedService;
 
-  constructor() {
+  constructor(private shared: SharedService) {
+    this.shared = shared
   }
 
   ngOnInit() {
+    console.log(this.shared.getFileData())
   }
 
 }

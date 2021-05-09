@@ -16,6 +16,7 @@ flask-sqlalchemy = "*"
 flask-restx = "*"
 psycopg2-binary = "*"
 pillow = "*"
+flask-cors = "*"
 
 [dev-packages]
 
