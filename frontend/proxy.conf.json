@@ -3,5 +3,20 @@
     "target": "http://127.0.0.1:5000/",
     "secure": false,
     "changeOrigin": true
+  },
+  "/pdftotext": {
+    "target": "http://127.0.0.1:5000/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/getpdftext": {
+    "target": "http://127.0.0.1:5000/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/uploadblob": {
+    "target": "http://127.0.0.1:5000/",
+    "secure": false,
+    "changeOrigin": true
   }
 }
