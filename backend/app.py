@@ -1,5 +1,5 @@
 from flask import Flask
-from googlecloud import *
+from .googlecloud import *
 
 app = Flask(__name__)
 
@@ -21,5 +21,5 @@ def uploadblob(file):
 def getpdftext(file):
     return get_pdf_text(file)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)

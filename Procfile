@@ -1,1 +1,1 @@
-web: gunicorn --chdir backend app:app -b 0.0.0.0:5000 --log-file -
+web: gunicorn run:app --log-file -
