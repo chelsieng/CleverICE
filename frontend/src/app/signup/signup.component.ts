@@ -1,4 +1,6 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 
 @Component({
     selector: 'app-signup',
@@ -10,7 +12,20 @@ export class SignupComponent implements OnInit {
     focus;
     focus1;
     focus2;
-    constructor() { }
+    api;
+
+    constructor(api: ApiService) {
+      this.api = api;
+    }
+
+    registerUser(email: string, password: string) {
+      this.api.registerUser(email, password).subscribe(
+        (data: any) => {
+          console.log(data)
+        },
+        (err: HttpErrorResponse) => console.error(err),
+      );
+    }
 
     ngOnInit() {}
 }

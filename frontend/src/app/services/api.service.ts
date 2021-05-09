@@ -29,4 +29,9 @@ export class ApiService {
     const url = '/scan_filename/'+filename;
     return this.http.get<any>(url);
   }
+
+  registerUser(email: string, password: string): Observable<any> {
+    const url = '/createUser';
+    return this.http.post<any>(url, [email, password]);
+  }
 }
