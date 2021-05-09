@@ -23,4 +23,11 @@ export class ApiService {
     const url = '/uploadblob/'+filename;
     return this.http.get<any>(url);
   }
+
+
+  scanFilename(filename: any): Observable<any> {
+    filename = filename.replace(/.*[\/\\]/, '')
+    const url = '/scan_filename/'+filename;
+    return this.http.get<any>(url);
+  }
 }

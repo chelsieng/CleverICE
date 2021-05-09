@@ -86,6 +86,12 @@ def text_path(docID):
 
 """ OpenAI API's for chatbot and extract information """
 
+@app.route('/scan_filename/<string:filename>')
+def scan_filename(filename):
+    text = get_pdf_text(filename)
+    model = openAI()
+    return model.scan(prompt = text)
+
 @app.route('/scan/<string:docID>')
 def scan_doc(docID):
     text = get_pdf_text(get_text_path(docID))
