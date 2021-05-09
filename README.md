@@ -1,4 +1,4 @@
-# TOHacks2021
+# CleverICE	
 # Backend
 ```
 	$ pipenv shell
