@@ -52,7 +52,7 @@ We're proud to have been able to create a prototype in 24 hours! The back-end wo
 
 ## :electric_plug: How to run Backend
 ```
-	$ pipenv install
+	$ pipenv install --dev
 	$ pipenv shell
 	$ pip install -r requirements.txt
 	$ python run.py
